@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 export async function generateMetadata({ params }) {
-  const locale = params?.locale || "en";
+  const { locale } = await params;
   const domain = "https://horizonica-travel.com";
 
   const titles = {
@@ -38,9 +38,7 @@ export async function generateMetadata({ params }) {
     title: titles[locale] || titles.en,
     description: descriptions[locale] || descriptions.en,
     keywords: keywords[locale] || keywords.en,
-
     metadataBase: new URL(domain),
-
     openGraph: {
       title: titles[locale] || titles.en,
       description: descriptions[locale] || descriptions.en,
@@ -57,14 +55,12 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
-
     twitter: {
       card: "summary_large_image",
       title: titles[locale] || titles.en,
       description: descriptions[locale] || descriptions.en,
       images: [`${domain}/images/sharm-elsheikh-and-hurghada-img.jpeg`],
     },
-
     alternates: {
       canonical: `${domain}/${locale}`,
       languages: {
@@ -77,7 +73,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function RootLayout({ children, params }) {
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params; // استخدام await لفك الـ promise
+
   // Structured data for the entire website
   const jsonLd = {
     "@context": "https://schema.org",
@@ -120,7 +118,7 @@ export default function RootLayout({ children, params }) {
   };
 
   return (
-    <html lang={params.locale}>
+    <html lang={locale}>
       <body
         className={`${roboto.className} antialiased min-h-screen flex flex-col`}
       >
@@ -130,7 +128,7 @@ export default function RootLayout({ children, params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <MobileMenuProvider>
-          <Header locale={params.locale} />
+          <Header locale={locale} />
           <main className="flex-grow mt-[64px]">{children}</main>
           <Footer />
           <FixedButtons />

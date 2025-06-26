@@ -4,7 +4,8 @@ import AboutSection from "@/components/home/AboutSection";
 import HighlightsSection from "@/components/home/HighlightsSection";
 
 export default async function Home({ params }) {
-  const dict = await getDictionary(params.locale);
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
 
   return (
     <main>
