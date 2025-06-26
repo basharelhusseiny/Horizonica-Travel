@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // تكوين الصور
   images: {
-    loader: "default",
+    domains: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
     path: "/_next/image",
+    loader: "default",
   },
 };
 
