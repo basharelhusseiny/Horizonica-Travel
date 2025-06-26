@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import Negotiator from "negotiator";
 import { match as matchLocale } from "@formatjs/intl-localematcher";
-import i18n from "./i18n"; // تأكد إنه عندك i18n.locales و i18n.defaultLocale
+import i18n from "./i18n";
 
 function getLocale(request) {
   const negotiatorHeaders = {};
@@ -25,6 +25,22 @@ function getLocale(request) {
 
 export default function middleware(request) {
   const pathname = request.nextUrl.pathname;
+  
+  // استثناء مسارات الصور والملفات الثابتة
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/images') ||
+    pathname.startsWith('/assets') ||
+    pathname.includes('/api/') ||
+    pathname.endsWith('.jpg') ||
+    pathname.endsWith('.jpeg') ||
+    pathname.endsWith('.png') ||
+    pathname.endsWith('.svg') ||
+    pathname.endsWith('.ico') ||
+    pathname.endsWith('.webp')
+  ) {
+    return NextResponse.next();
+  }
 
   // لو اليوزر داخل على صفحة فيها اللغة فعلاً، نكمل عادي
   const pathnameIsMissingLocale = i18n.locales.every(
@@ -44,6 +60,6 @@ export default function middleware(request) {
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|images).*)",
   ],
 };
