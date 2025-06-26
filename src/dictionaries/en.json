@@ -1,0 +1,29 @@
+{
+  "navigation": {
+    "home": "Home",
+    "tours": "Tours",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "imageAlt": "Red Sea tours in Sharm El Sheikh and Hurghada",
+    "badge": "Best Travel Destinations in Egypt",
+    "titleBefore": "Top Excursions in",
+    "hurghada": "Hurghada",
+    "sharm": "Sharm El Sheikh",
+    "subtitle": "Best Things to Do in Egypt's Top Resorts",
+    "paragraph1": "Explore the best",
+    "sharmTours": "Sharm El Sheikh tours",
+    "and": "and",
+    "hurghadaTrips": "Hurghada trips",
+    "with": "with",
+    "paragraph2": "Dive into thrilling",
+    "excursions": "Red Sea excursions",
+    "safaris": "unforgettable desert safaris, and relaxing",
+    "holidays": "Egypt beach holidays",
+    "ending": "all tailored for the ultimate travel experience.",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More About Us"
+  }
+}

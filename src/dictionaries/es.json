@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "tours": "Tours",
+    "blog": "Blog",
+    "about": "Sobre nosotros",
+    "contact": "Contacto"
+  },
+ "hero": {
+  "imageAlt": "Tours por el mar Rojo en Sharm El Sheikh y Hurghada",
+  "badge": "Mejores destinos turísticos en Egipto",
+  "titleBefore": "Excursiones principales en",
+  "hurghada": "Hurghada",
+  "sharm": "Sharm El Sheikh",
+  "subtitle": "Las mejores cosas que hacer en los principales resorts de Egipto",
+  "paragraph1": "Explora los mejores",
+  "sharmTours": "tours en Sharm El Sheikh",
+  "and": "y",
+  "hurghadaTrips": "excursiones en Hurghada",
+  "with": "con",
+  "paragraph2": "Sumérgete en emocionantes",
+  "excursions": "excursiones por el mar Rojo",
+  "safaris": "safaris por el desierto inolvidables y relajantes",
+  "holidays": "vacaciones en la playa en Egipto",
+  "ending": "— todo diseñado para una experiencia de viaje inolvidable.",
+  "bookNow": "Reservar ahora",
+  "learnMore": "Más sobre nosotros"
+}
+
+}
