@@ -33,8 +33,6 @@ const HeroSection = ({ dictionary: t }) => {
           fill
           className="object-cover"
           priority
-          sizes="100vw"
-          quality={85}
         />
         <div className="absolute inset-0 bg-sky-950/65" aria-hidden="true" />
       </div>

@@ -68,7 +68,7 @@ const HighlightsSection = () => {
       reviews: 156,
       duration: "5 hours",
       groupSize: "Small group",
-      image: "/images/sharm-elsheikh-and-hurghada-img.jpeg",
+      image: "/images/Moks_design Author Portfolio _ Freepik.jpeg",
       alt: "Snorkeling in the crystal clear waters of the Red Sea in Sharm El Sheikh",
       featured: false,
       originalPrice: "$50",
