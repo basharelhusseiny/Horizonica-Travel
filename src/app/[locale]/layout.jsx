@@ -50,7 +50,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: [
         {
-          url: `${domain}/assets/images/sharm-elsheikh-and-hurghada-img.jpeg`,
+          url: `${domain}/images/sharm-elsheikh-and-hurghada-img.jpeg`,
           width: 1200,
           height: 630,
           alt: "Horizonica Travel - Excursions in Hurghada and Sharm El Sheikh",
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: titles[locale] || titles.en,
       description: descriptions[locale] || descriptions.en,
-      images: [`${domain}/assets/images/sharm-elsheikh-and-hurghada-img.jpeg`],
+      images: [`${domain}/images/sharm-elsheikh-and-hurghada-img.jpeg`],
     },
 
     alternates: {

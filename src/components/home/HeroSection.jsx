@@ -8,7 +8,7 @@ const HeroSection = ({ dictionary: t }) => {
     name: "Horizonica Travel",
     description:
       "Top excursions in Hurghada and Sharm El Sheikh with Horizonica Travel. Dive into thrilling Red Sea adventures, desert safaris, and unforgettable holidays.",
-    image: "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg",
+    image: "/images/sharm-elsheikh-and-hurghada-img.jpeg",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Hurghada",
@@ -28,7 +28,7 @@ const HeroSection = ({ dictionary: t }) => {
       {/* Background Image (Optimized) */}
       <div className="absolute inset-0">
         <Image
-          src="/assets/images/sharm-elsheikh-and-hurghada-img.jpeg"
+          src="/images/sharm-elsheikh-and-hurghada-img.jpeg"
           alt={t.imageAlt}
           fill
           className="object-cover"

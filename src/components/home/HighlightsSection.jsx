@@ -16,7 +16,7 @@ const HighlightsSection = () => {
           "@type": "TouristAttraction",
           "name": "Desert Safari Adventures in Hurghada",
           "description": "Experience thrilling desert safaris with quad bikes, camel rides, and authentic Bedouin experiences in Hurghada.",
-          "image": "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg"
+          "image": "/images/sharm-elsheikh-and-hurghada-img.jpeg"
         }
       },
       {
@@ -26,7 +26,7 @@ const HighlightsSection = () => {
           "@type": "TouristAttraction",
           "name": "Snorkeling in Sharm El Sheikh",
           "description": "Discover the vibrant underwater world of the Red Sea with guided snorkeling tours in Sharm El Sheikh.",
-          "image": "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg"
+          "image": "/images/sharm-elsheikh-and-hurghada-img.jpeg"
         }
       },
       {
@@ -36,7 +36,7 @@ const HighlightsSection = () => {
           "@type": "TouristAttraction",
           "name": "Luxor Day Trip from Hurghada",
           "description": "Explore ancient Egyptian history with a day trip to Luxor from Hurghada, visiting temples and tombs.",
-          "image": "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg"
+          "image": "/images/sharm-elsheikh-and-hurghada-img.jpeg"
         }
       }
     ]
@@ -53,7 +53,7 @@ const HighlightsSection = () => {
       reviews: 128,
       duration: "6 hours",
       groupSize: "Small group",
-      image: "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg",
+      image: "/images/sharm-elsheikh-and-hurghada-img.jpeg",
       alt: "Desert Safari Adventures in Hurghada with quad bikes and camels",
       featured: true,
       originalPrice: "$65",
@@ -68,7 +68,7 @@ const HighlightsSection = () => {
       reviews: 156,
       duration: "5 hours",
       groupSize: "Small group",
-      image: "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg",
+      image: "/images/sharm-elsheikh-and-hurghada-img.jpeg",
       alt: "Snorkeling in the crystal clear waters of the Red Sea in Sharm El Sheikh",
       featured: false,
       originalPrice: "$50",
@@ -83,7 +83,7 @@ const HighlightsSection = () => {
       reviews: 112,
       duration: "Full day",
       groupSize: "Medium group",
-      image: "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg",
+      image: "/images/sharm-elsheikh-and-hurghada-img.jpeg",
       alt: "Luxor temples and ancient Egyptian monuments day trip from Hurghada",
       featured: true,
       originalPrice: "$120",
@@ -98,7 +98,7 @@ const HighlightsSection = () => {
       reviews: 98,
       duration: "7 hours",
       groupSize: "Small group",
-      image: "/assets/images/sharm-elsheikh-and-hurghada-img.jpeg",
+      image: "/images/sharm-elsheikh-and-hurghada-img.jpeg",
       alt: "Beautiful coral reefs and marine life at Ras Mohammed National Park in Sharm El Sheikh",
       featured: false,
       originalPrice: "$75",
