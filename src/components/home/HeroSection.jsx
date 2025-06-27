@@ -59,17 +59,31 @@ const HeroSection = ({ dictionary: t }) => {
 
           {/* Optimized Paragraph */}
           <p className="text-base sm:text-xl tracking-wide mb-8 text-white">
-            <span
-              dangerouslySetInnerHTML={{
-                __html: t.paragraph1.replace(
-                  /Sharm El Sheikh tours|Hurghada trips/g,
-                  "<strong>$&</strong>"
-                ),
-              }}
-            />{" "}
-            <strong>{t.with} Horizonica Travel</strong>. {t.paragraph2}{" "}
-            <strong>{t.excursions}</strong>, {t.safaris}{" "}
-            <strong>{t.holidays}</strong> — {t.ending}
+            {t.paragraph && (
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: t.paragraph.replace(
+                    /Hurghada Excursions, Desert Safaris & Red Sea Adventures|Horizonica Travel/g,
+                    "<strong>$&</strong>"
+                  ),
+                }}
+              />
+            )}
+            {!t.paragraph && (
+              <>
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: t.paragraph1?.replace(
+                      /Sharm El Sheikh tours|Hurghada trips/g,
+                      "<strong>$&</strong>"
+                    ),
+                  }}
+                />{" "}
+                <strong>{t.with} Horizonica Travel</strong>. {t.paragraph2}{" "}
+                <strong>{t.excursions}</strong>, {t.safaris}{" "}
+                <strong>{t.holidays}</strong> — {t.ending}
+              </>
+            )}
           </p>
 
           {/* CTA Buttons with ARIA */}
