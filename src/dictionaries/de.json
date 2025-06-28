@@ -1,28 +1,18 @@
 {
   "navigation": {
     "home": "Startseite",
-    "tours": "Touren",
-    "blog": "Blog",
+    "hurghada-excursions": "Hurghada Ausflüge",
     "about": "Über uns",
     "contact": "Kontakt"
   },
   "hero": {
     "imageAlt": "Rotes Meer Touren in Sharm El Sheikh und Hurghada",
-    "badge": "Top-Reiseziele in Ägypten",
+    "badge": "Beste Reiseziele in Ägypten",
     "titleBefore": "Top-Ausflüge in",
     "hurghada": "Hurghada",
     "sharm": "Sharm El Sheikh",
-    "subtitle": "Die besten Aktivitäten in Ägyptens Top-Ferienorten",
-    "paragraph1": "Entdecken Sie die besten",
-    "sharmTours": "Sharm El Sheikh Touren",
-    "and": "und",
-    "hurghadaTrips": "Hurghada Ausflüge",
-    "with": "mit",
-    "paragraph2": "Tauchen Sie ein in aufregende",
-    "excursions": "Ausflüge am Roten Meer",
-    "safaris": "unvergessliche Wüstensafaris und entspannende",
-    "holidays": "Strandurlaube in Ägypten",
-    "ending": "– alles maßgeschneidert für das ultimative Reiseerlebnis.",
+    "subtitle": "Beste Aktivitäten in Ägyptens Top-Resorts",
+    "paragraph": "Hurghada Ausflüge, Wüstensafaris & Rotes Meer Abenteuer mit Horizonica Travel – Erleben Sie Ägyptens besten Strandurlaub und maßgeschneiderte Touren",
     "bookNow": "Jetzt buchen",
     "learnMore": "Mehr über uns erfahren"
   }

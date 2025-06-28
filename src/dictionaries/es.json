@@ -1,30 +1,19 @@
 {
   "navigation": {
     "home": "Inicio",
-    "tours": "Tours",
-    "blog": "Blog",
+    "hurghada-excursions": "Excursiones en Hurghada",
     "about": "Sobre nosotros",
     "contact": "Contacto"
   },
- "hero": {
-  "imageAlt": "Tours por el mar Rojo en Sharm El Sheikh y Hurghada",
-  "badge": "Mejores destinos turísticos en Egipto",
-  "titleBefore": "Excursiones principales en",
-  "hurghada": "Hurghada",
-  "sharm": "Sharm El Sheikh",
-  "subtitle": "Las mejores cosas que hacer en los principales resorts de Egipto",
-  "paragraph1": "Explora los mejores",
-  "sharmTours": "tours en Sharm El Sheikh",
-  "and": "y",
-  "hurghadaTrips": "excursiones en Hurghada",
-  "with": "con",
-  "paragraph2": "Sumérgete en emocionantes",
-  "excursions": "excursiones por el mar Rojo",
-  "safaris": "safaris por el desierto inolvidables y relajantes",
-  "holidays": "vacaciones en la playa en Egipto",
-  "ending": "— todo diseñado para una experiencia de viaje inolvidable.",
-  "bookNow": "Reservar ahora",
-  "learnMore": "Más sobre nosotros"
-}
-
+  "hero": {
+    "imageAlt": "Tours por el Mar Rojo en Sharm El Sheikh y Hurghada",
+    "badge": "Mejores destinos turísticos en Egipto",
+    "titleBefore": "Principales excursiones en",
+    "hurghada": "Hurghada",
+    "sharm": "Sharm El Sheikh",
+    "subtitle": "Las mejores actividades en los mejores resorts de Egipto",
+    "paragraph": "Excursiones en Hurghada, safaris por el desierto y aventuras en el Mar Rojo con Horizonica Travel – Explora las mejores vacaciones en la playa de Egipto y tours personalizados",
+    "bookNow": "Reservar ahora",
+    "learnMore": "Más sobre nosotros"
+  }
 }

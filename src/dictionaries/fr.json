@@ -1,28 +1,18 @@
 {
   "navigation": {
     "home": "Accueil",
-    "tours": "Excursions",
-    "blog": "Blog",
+    "hurghada-excursions": "Excursions à Hurghada",
     "about": "À propos",
     "contact": "Contact"
   },
   "hero": {
-    "imageAlt": "Circuits en mer Rouge à Sharm El Sheikh et Hurghada",
+    "imageAlt": "Excursions en mer Rouge à Sharm El Sheikh et Hurghada",
     "badge": "Meilleures destinations en Égypte",
     "titleBefore": "Meilleures excursions à",
     "hurghada": "Hurghada",
     "sharm": "Sharm El Sheikh",
-    "subtitle": "Les meilleures activités dans les stations balnéaires d'Égypte",
-    "paragraph1": "Découvrez les meilleurs",
-    "sharmTours": "circuits à Sharm El Sheikh",
-    "and": "et",
-    "hurghadaTrips": "excursions à Hurghada",
-    "with": "avec",
-    "paragraph2": "Plongez dans des",
-    "excursions": "excursions en mer Rouge",
-    "safaris": "safaris dans le désert inoubliables, et des",
-    "holidays": "vacances balnéaires en Égypte",
-    "ending": "– tout est conçu pour une expérience de voyage inoubliable.",
+    "subtitle": "Les meilleures choses à faire dans les stations balnéaires d'Égypte",
+    "paragraph": "Excursions à Hurghada, safaris dans le désert et aventures en mer Rouge avec Horizonica Travel – Découvrez les meilleures vacances balnéaires et circuits sur mesure en Égypte",
     "bookNow": "Réserver maintenant",
     "learnMore": "En savoir plus sur nous"
   }

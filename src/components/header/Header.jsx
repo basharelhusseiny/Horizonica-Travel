@@ -10,8 +10,11 @@ export default async function Header({ locale }) {
 
   const navLinks = [
     { id: 1, title: navigation.home, href: "/" },
-    { id: 2, title: navigation.tours, href: "/tours" },
-    { id: 3, title: navigation.blog, href: "/blog" },
+    {
+      id: 2,
+      title: navigation["hurghada-excursions"],
+      href: "/hurghada-excursions",
+    },
     { id: 4, title: navigation.about, href: "/about" },
     { id: 5, title: navigation.contact, href: "/contact" },
   ];
