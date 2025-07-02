@@ -74,7 +74,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function RootLayout({ children, params }) {
-  const { locale } = await params; // استخدام await لفك الـ promise
+  const { locale } = await params;
 
   // Structured data for the entire website
   const jsonLd = {
@@ -122,7 +122,6 @@ export default async function RootLayout({ children, params }) {
       <body
         className={`${roboto.className} antialiased min-h-screen flex flex-col`}
       >
-        {/* Add structured data to the entire site */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

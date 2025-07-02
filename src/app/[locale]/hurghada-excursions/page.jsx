@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import ContactSection from "@/components/hurghadaPage/ContactSection";
+import { excursionsData } from "@/data/excursions";
 
 export const generateMetadata = () => {
   return {
@@ -27,7 +28,7 @@ const HurghadaExcursions = () => {
       title: "Hurghada Desert Safari Tours",
       desc: "Experience the ultimate Desert Safari from Hurghada with thrilling quad biking, buggy rides, jeep safari, and magical stargazing under the desert sky with visiting Bedouin village from Hurghada.",
       img: "/images/Hurghada-Desert-Safari-Tours.jpg",
-      slug: "desert-safari",
+      slug: "Hurghada-safari",
     },
     {
       id: 2,
@@ -42,7 +43,7 @@ const HurghadaExcursions = () => {
       title: "Luxor Day Trips from Hurghada",
       desc: "Discover Luxor on a day trip from Hurghada with air-conditioned transport by bus or minivan. Visit Karnak Temple, Hatshepsut Temple, Colossi of Memnon, and the Valley of the Kings with a private guide, enjoy a Nile crossing and a delicious lunch.",
       img: "/images/Luxor-Day-Trips-from-Hurghada.jpg",
-      slug: "luxor-day-trips",
+      slug: "Luxor-trips",
     },
     {
       id: 4,
