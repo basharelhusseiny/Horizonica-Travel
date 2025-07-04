@@ -24,8 +24,9 @@ const safariExcursions = [
     groupSize: "Group tour",
     rating: 4.3,
     details: {
-      overview:
-        "Unforgettable Quad Bike from Hurghada – 3-Hour Desert Adventure from [€15]\n\nLooking for the ultimate Hurghada ATV experience?\nJoin our thrilling quad bike safari from Hurghada, designed for those who crave adrenaline, breathtaking desert views, and cultural encounters – all in just 3 hours!",
+      overviewTitle:
+        "Unforgettable Quad Bike from Hurghada – 3-Hour Desert Adventure ",
+        overviewDetails:"Looking for the ultimate Hurghada ATV experience?\nJoin our thrilling quad bike safari from Hurghada, designed for those who crave adrenaline, breathtaking desert views, and cultural encounters – all in just 3 hours!",
       tourHighlights: {
         pickup: "Pick-up from Hurghada hotels",
         chooseTrip:
@@ -95,8 +96,9 @@ const safariExcursions = [
     groupSize: "Group tour",
     rating: 4.6,
     details: {
-      overview:
-        "Super Safari in Hurghada – Quad Bike, Camel Ride & BBQ Dinner | Only €20!\n\nReady for the top-rated desert adventure in Hurghada ? Join our Super Safari in Hurghada Excursion enjoy a full-day journey through the Eastern Desert. Ride your own quad bike, hop on a camel, drive a 4x4 jeep, and enjoy a delicious Bedouin BBQ dinner with live entertainment — all in one unforgettable tour!\n\nWhy Choose VIP Super Safari in Hurghada?\n\nFree hotel pickup & drop-off in Hurghada\n\nSmaller group size for a comfortable, personal experience\n\nPrivate Safari Station away from crowded tourist routes\n\nHigh-quality service and professional\n\ndesert guides\n\nAll-in-one experience: Quad Bike + Jeep + Spider Buggy + Camel + BBQ Dinner + Oriental Show",
+      overviewTitle:
+        "Super Safari in Hurghada – Quad Bike, Camel Ride & BBQ Dinner",
+        overviewDetails:"Ready for the top-rated desert adventure in Hurghada ? Join our Super Safari in Hurghada Excursion enjoy a full-day journey through the Eastern Desert. Ride your own quad bike, hop on a camel, drive a 4x4 jeep, and enjoy a delicious Bedouin BBQ dinner with live entertainment — all in one unforgettable tour!\n\nWhy Choose VIP Super Safari in Hurghada?\n\nFree hotel pickup & drop-off in Hurghada\n\nSmaller group size for a comfortable, personal experience\n\nPrivate Safari Station away from crowded tourist routes\n\nHigh-quality service and professional\n\ndesert guides\n\nAll-in-one experience: Quad Bike + Jeep + Spider Buggy + Camel + BBQ Dinner + Oriental Show",
       tourHighlights: {
         availability: "Availability: Every day",
         duration: "Duration: Around 6 hours",
