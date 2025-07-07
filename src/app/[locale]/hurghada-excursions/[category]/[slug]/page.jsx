@@ -12,12 +12,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import { 
-  FaClock, 
-  FaMapMarkerAlt, 
-  FaUsers, 
-  FaStar, 
-  FaCheckCircle, 
+import {
+  FaClock,
+  FaMapMarkerAlt,
+  FaUsers,
+  FaStar,
+  FaCheckCircle,
   FaWhatsapp,
   FaArrowLeft,
   FaCalendarAlt,
@@ -25,7 +25,7 @@ import {
   FaRoute,
   FaShieldAlt,
   FaMoneyBillWave,
-  FaCamera
+  FaCamera,
 } from "react-icons/fa";
 
 // Metadata generation moved to a separate file for client component compatibility
@@ -34,7 +34,7 @@ const TourDetailPage = ({ params }) => {
   // Unwrap params using React.use()
   const unwrappedParams = use(params);
   const { slug, category } = unwrappedParams;
-  
+
   const [tour, setTour] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -42,7 +42,7 @@ const TourDetailPage = ({ params }) => {
     // Find the tour data
     const excursions = excursionsData[category];
     const foundTour = excursions?.find((tour) => tour.slug === slug);
-    
+
     if (foundTour) {
       setTour(foundTour);
     }
@@ -75,7 +75,7 @@ const TourDetailPage = ({ params }) => {
     includes = [],
     excludes = [],
     whatToBring,
-    highlights = []
+    highlights = [],
   } = tour;
 
   // Extract data from details object
@@ -89,11 +89,13 @@ const TourDetailPage = ({ params }) => {
     inclusions = "",
     exclusions = "",
     whatToBring: detailsWhatToBring = "",
-    bookingInfo = ""
+    bookingInfo = "",
   } = details || {};
 
   // Use data from details if available, otherwise use top-level data
-  const finalIncludes = inclusions ? inclusions.split('\n').filter(item => item.trim()) : includes;
+  const finalIncludes = inclusions
+    ? inclusions.split("\n").filter((item) => item.trim())
+    : includes;
   const finalWhatToBring = detailsWhatToBring || whatToBring;
 
   // Combine main image with gallery for the swiper
@@ -103,15 +105,19 @@ const TourDetailPage = ({ params }) => {
     <div className="bg-gradient-to-b from-white to-orange-50 pb-16">
       {/* Back Button */}
       <div className="container mx-auto px-4 pt-6">
-        <Link 
+        <Link
           href={`/hurghada-excursions/${category}`}
           className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium"
         >
           <FaArrowLeft className="mr-2" />
-          Back to {category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+          Back to{" "}
+          {category
+            .split("-")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" ")}
         </Link>
       </div>
-      
+
       {/* Overview Title - Large and Attractive */}
       <div className="container mx-auto px-4 py-6">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -119,13 +125,15 @@ const TourDetailPage = ({ params }) => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
               {overviewTitle || title}
             </h1>
-            
+
             {/* Overview Details */}
             {overviewDetails && (
               <div className="max-w-4xl mx-auto mb-8">
                 <div className="prose prose-orange prose-lg max-w-none text-gray-700 leading-relaxed">
-                  {overviewDetails.split('\n').map((paragraph, i) => (
-                    <p key={i} className="mb-4 text-lg font-medium">{paragraph}</p>
+                  {overviewDetails.split("\n").map((paragraph, i) => (
+                    <p key={i} className="mb-4 text-lg font-medium">
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -133,8 +141,8 @@ const TourDetailPage = ({ params }) => {
           </div>
         </div>
       </div>
-      
-      {/* Image Swiper and Price Details Side by Side */}
+
+      {/* Image Swiper and Tour Highlights Side by Side */}
       <div className="container mx-auto px-4 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Image Swiper - Half width on desktop */}
@@ -152,10 +160,10 @@ const TourDetailPage = ({ params }) => {
                 {allImages.map((img, index) => (
                   <SwiperSlide key={index}>
                     <div className="relative h-full w-full">
-                      <Image 
-                        src={img} 
-                        alt={`${title} - image ${index + 1}`} 
-                        fill 
+                      <Image
+                        src={img}
+                        alt={`${title} - image ${index + 1}`}
+                        fill
                         priority={index === 0}
                         className="object-cover"
                       />
@@ -165,19 +173,55 @@ const TourDetailPage = ({ params }) => {
               </Swiper>
             </div>
           </div>
-          
-          {/* Price Details - Half width on desktop */}
+
+          {/* Tour Highlights - Half width on desktop */}
           <div className="space-y-6">
-            {/* Price Details - Much Larger and more prominent */}
-            {pricing && (
+            {/* Tour Highlights Section */}
+            {Object.keys(tourHighlights).length > 0 && (
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                  <FaStar className="text-orange-500 mr-3 text-xl" />
+                  Tour Highlights
+                </h3>
+                <div className="grid grid-cols-1 gap-4">
+                  {Object.entries(tourHighlights).map(([key, value], i) => (
+                    <div
+                      key={i}
+                      className="flex items-start p-4 bg-orange-50 rounded-lg"
+                    >
+                      <div className="bg-orange-500 text-white p-2 rounded-full mr-3 mt-0.5 flex-shrink-0">
+                        <FaCheckCircle className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-800 text-lg capitalize">
+                          {key.replace(/([A-Z])/g, " $1").trim()}:{" "}
+                        </p>
+                        <p className="text-gray-700 text-base mt-1">
+                          {value.split("\n").map((line, j) => (
+                            <span key={j} className="block mb-2">
+                              {line}
+                            </span>
+                          ))}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Price Details - if no Tour Highlights */}
+            {Object.keys(tourHighlights).length === 0 && pricing && (
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                   <FaMoneyBillWave className="text-green-500 mr-3 text-xl" />
                   Price Details
                 </h3>
                 <div className="prose prose-orange max-w-none text-gray-700 leading-relaxed">
-                  {pricing.split('\n').map((paragraph, i) => (
-                    <p key={i} className="mb-3 text-lg font-medium">{paragraph}</p>
+                  {pricing.split("\n").map((paragraph, i) => (
+                    <p key={i} className="mb-3 text-lg font-medium">
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -185,7 +229,7 @@ const TourDetailPage = ({ params }) => {
           </div>
         </div>
       </div>
-      
+
       {/* Tour Info Badges */}
       <div className="container mx-auto px-4 py-6">
         <div className="bg-white rounded-2xl shadow-xl p-6">
@@ -202,11 +246,18 @@ const TourDetailPage = ({ params }) => {
               )}
               {priceOld && (
                 <span className="ml-2 bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm font-bold">
-                  SAVE {Math.round(((parseFloat(priceOld.replace(/[^0-9.]/g, '')) - parseFloat(price.replace(/[^0-9.]/g, ''))) / parseFloat(priceOld.replace(/[^0-9.]/g, ''))) * 100)}%
+                  SAVE{" "}
+                  {Math.round(
+                    ((parseFloat(priceOld.replace(/[^0-9.]/g, "")) -
+                      parseFloat(price.replace(/[^0-9.]/g, ""))) /
+                      parseFloat(priceOld.replace(/[^0-9.]/g, ""))) *
+                      100
+                  )}
+                  %
                 </span>
               )}
             </div>
-            
+
             {/* Tour Details Badges */}
             <div className="flex flex-wrap gap-3">
               {duration && (
@@ -230,11 +281,12 @@ const TourDetailPage = ({ params }) => {
               {rating && (
                 <span className="bg-yellow-100 text-yellow-700 px-3 py-1.5 rounded-full text-sm font-medium flex items-center">
                   <FaStar className="mr-1.5" />
-                  {rating} {reviews && <span className="text-xs ml-1">({reviews})</span>}
+                  {rating}{" "}
+                  {reviews && <span className="text-xs ml-1">({reviews})</span>}
                 </span>
               )}
             </div>
-            
+
             {/* Book Now Button */}
             <a
               href="https://api.whatsapp.com/send?phone=201062892767"
@@ -248,12 +300,54 @@ const TourDetailPage = ({ params }) => {
           </div>
         </div>
       </div>
-      
+
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left Column - Tour Details */}
           <div className="lg:col-span-2">
+            {/* Itinerary Section - Moved to top */}
+            {itinerary && itinerary.length > 0 && (
+              <div className="mb-8 bg-white rounded-xl shadow-lg p-6">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                  <FaRoute className="text-orange-500 mr-3 text-xl" />
+                  Tour Itinerary
+                </h2>
+                <div className="relative">
+                  {/* Timeline line */}
+                  <div className="absolute left-3.5 top-0 bottom-0 w-0.5 bg-orange-200"></div>
+
+                  {/* Itinerary steps */}
+                  <div className="space-y-6 relative">
+                    {itinerary.map((item, i) => (
+                      <div key={i} className="ml-10 relative">
+                        {/* Timeline dot */}
+                        <div className="absolute -left-10 w-7 h-7 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm">
+                          {i + 1}
+                        </div>
+
+                        {/* Content */}
+                        <div className="bg-orange-50 rounded-lg p-4">
+                          <h3 className="font-bold text-lg text-gray-800 mb-2">
+                            {item.step}
+                          </h3>
+                          <div className="text-gray-700 text-base">
+                            {item.description
+                              .split("\n")
+                              .map((paragraph, j) => (
+                                <p key={j} className="mb-3">
+                                  {paragraph}
+                                </p>
+                              ))}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Overview Section - Larger and more prominent */}
             {overview && (
               <div className="mb-8 bg-white rounded-xl shadow-lg p-6">
@@ -262,40 +356,32 @@ const TourDetailPage = ({ params }) => {
                   Overview
                 </h2>
                 <div className="prose prose-orange max-w-none text-gray-700 leading-relaxed text-lg">
-                  {overview.split('\n').map((paragraph, i) => (
-                    <p key={i} className="mb-4 font-medium">{paragraph}</p>
+                  {overview.split("\n").map((paragraph, i) => (
+                    <p key={i} className="mb-4 font-medium">
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
             )}
-            
-            {/* Tour Highlights Section */}
-            {Object.keys(tourHighlights).length > 0 && (
-              <div className="mb-8 bg-white rounded-xl shadow-md p-5">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                  <FaStar className="text-orange-500 mr-2" />
-                  Tour Highlights
+
+            {/* Price Details Section */}
+            {pricing && (
+              <div className="mb-8 bg-white rounded-xl shadow-lg p-6">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                  <FaMoneyBillWave className="text-green-500 mr-3 text-xl" />
+                  Price Details
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {Object.entries(tourHighlights).map(([key, value], i) => (
-                    <div key={i} className="flex items-start p-3 bg-orange-50 rounded-lg">
-                      <div className="bg-orange-500 text-white p-1.5 rounded-full mr-2.5 flex-shrink-0">
-                        <FaCheckCircle className="w-3.5 h-3.5" />
-                      </div>
-                      <div>
-                        <p className="font-medium text-gray-800 text-sm capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}: </p>
-                        <p className="text-gray-700 text-sm mt-1">
-                          {value.split('\n').map((line, j) => (
-                            <span key={j} className="block mb-1">{line}</span>
-                          ))}
-                        </p>
-                      </div>
-                    </div>
+                <div className="prose prose-orange max-w-none text-gray-700 leading-relaxed text-lg">
+                  {pricing.split("\n").map((paragraph, i) => (
+                    <p key={i} className="mb-4 font-medium">
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
             )}
-            
+
             {/* Highlights Section (from top-level data) */}
             {highlights && highlights.length > 0 && (
               <div className="mb-8 bg-white rounded-xl shadow-md p-5">
@@ -305,55 +391,24 @@ const TourDetailPage = ({ params }) => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {highlights.map((highlight, i) => (
-                    <div key={i} className="flex items-start p-3 bg-orange-50 rounded-lg">
+                    <div
+                      key={i}
+                      className="flex items-start p-3 bg-orange-50 rounded-lg"
+                    >
                       <div className="bg-orange-500 text-white p-1.5 rounded-full mr-2.5 flex-shrink-0">
                         <FaCheckCircle className="w-3.5 h-3.5" />
                       </div>
                       <div>
-                        <p className="font-medium text-gray-800 text-sm">{highlight}</p>
+                        <p className="font-medium text-gray-800 text-sm">
+                          {highlight}
+                        </p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
             )}
-            
-            {/* Itinerary Section */}
-            {itinerary && itinerary.length > 0 && (
-              <div className="mb-8 bg-white rounded-xl shadow-md p-5">
-                <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                  <FaRoute className="text-orange-500 mr-2" />
-                  Tour Itinerary
-                </h2>
-                <div className="relative">
-                  {/* Timeline line */}
-                  <div className="absolute left-3.5 top-0 bottom-0 w-0.5 bg-orange-200"></div>
-                  
-                  {/* Itinerary steps */}
-                  <div className="space-y-6 relative">
-                    {itinerary.map((item, i) => (
-                      <div key={i} className="ml-10 relative">
-                        {/* Timeline dot */}
-                        <div className="absolute -left-10 w-7 h-7 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm">
-                          {i + 1}
-                        </div>
-                        
-                        {/* Content */}
-                        <div className="bg-orange-50 rounded-lg p-3">
-                          <h3 className="font-bold text-base text-gray-800 mb-2">{item.step}</h3>
-                          <div className="text-gray-700 text-sm">
-                            {item.description.split('\n').map((paragraph, j) => (
-                              <p key={j} className="mb-2">{paragraph}</p>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
-            
+
             {/* What to Bring Section */}
             {finalWhatToBring && (
               <div className="mb-8 bg-white rounded-xl shadow-md p-5">
@@ -361,9 +416,9 @@ const TourDetailPage = ({ params }) => {
                   <FaShieldAlt className="text-orange-500 mr-2" />
                   What to Bring
                 </h2>
-                <div className="prose prose-orange max-w-none text-gray-700 leading-relaxed text-sm">
-                  {finalWhatToBring.split('\n').map((item, i) => {
-                    if (item.trim().startsWith('-')) {
+                <div className="prose prose-orange max-w-none text-gray-700 leading-relaxed">
+                  {finalWhatToBring.split("\n").map((item, i) => {
+                    if (item.trim().startsWith("-")) {
                       return (
                         <div key={i} className="flex items-start mb-2.5">
                           <div className="bg-blue-100 text-blue-500 p-1 rounded-full mr-2.5 mt-0.5 flex-shrink-0">
@@ -373,12 +428,16 @@ const TourDetailPage = ({ params }) => {
                         </div>
                       );
                     }
-                    return <p key={i} className="mb-3">{item}</p>;
+                    return (
+                      <p key={i} className="mb-3">
+                        {item}
+                      </p>
+                    );
                   })}
                 </div>
               </div>
             )}
-            
+
             {/* Photo Gallery Grid */}
             {gallery.length > 0 && (
               <div className="mb-8 bg-white rounded-xl shadow-md p-5">
@@ -388,7 +447,10 @@ const TourDetailPage = ({ params }) => {
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {gallery.map((img, i) => (
-                    <div key={i} className="relative h-32 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+                    <div
+                      key={i}
+                      className="relative h-32 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
+                    >
                       <Image
                         src={img}
                         alt={`${title} gallery image ${i + 1}`}
@@ -401,7 +463,7 @@ const TourDetailPage = ({ params }) => {
               </div>
             )}
           </div>
-          
+
           {/* Right Column - Sidebar */}
           <div className="lg:col-span-1 space-y-8">
             {/* Booking Info */}
@@ -412,10 +474,16 @@ const TourDetailPage = ({ params }) => {
                   Booking Information
                 </h3>
                 <div className="prose prose-invert max-w-none text-base">
-                  {bookingInfo.split('\n').map((paragraph, i) => (
-                    <p key={i} className="mb-4">{paragraph}</p>
-                  ))}
+                  {bookingInfo
+                    ?.replace(/\\n/g, "\n")
+                    .split("\n")
+                    .map((paragraph, i) => (
+                      <p key={i} className="mb-4">
+                        {paragraph}
+                      </p>
+                    ))}
                 </div>
+
                 <a
                   href="https://api.whatsapp.com/send?phone=201062892767"
                   target="_blank"
@@ -427,7 +495,7 @@ const TourDetailPage = ({ params }) => {
                 </a>
               </div>
             )}
-            
+
             {/* What's Included - Much Larger and more prominent */}
             {finalIncludes && finalIncludes.length > 0 && (
               <div className="bg-white rounded-xl shadow-lg p-6 mt-8">
@@ -436,28 +504,34 @@ const TourDetailPage = ({ params }) => {
                   What's Included
                 </h3>
                 <ul className="space-y-3">
-                  {typeof finalIncludes === 'string' 
-                    ? finalIncludes.split('\n').filter(item => item.trim()).map((item, i) => (
-                        <li key={i} className="flex items-start">
-                          <div className="bg-green-100 text-green-500 p-2 rounded-full mr-3 mt-0.5 flex-shrink-0">
-                            <FaCheckCircle className="w-5 h-5" />
-                          </div>
-                          <span className="text-gray-700 text-lg font-medium">{item.replace(/^-/, '').trim()}</span>
-                        </li>
-                      ))
+                  {typeof finalIncludes === "string"
+                    ? finalIncludes
+                        .split("\n")
+                        .filter((item) => item.trim())
+                        .map((item, i) => (
+                          <li key={i} className="flex items-start">
+                            <div className="bg-green-100 text-green-500 p-2 rounded-full mr-3 mt-0.5 flex-shrink-0">
+                              <FaCheckCircle className="w-4 h-4" />
+                            </div>
+                            <span className="text-gray-700 ">
+                              {item.replace(/^-/, "").trim()}
+                            </span>
+                          </li>
+                        ))
                     : finalIncludes.map((item, i) => (
                         <li key={i} className="flex items-start">
                           <div className="bg-green-100 text-green-500 p-2 rounded-full mr-3 mt-0.5 flex-shrink-0">
-                            <FaCheckCircle className="w-5 h-5" />
+                            <FaCheckCircle className="w-4 h-4" />
                           </div>
-                          <span className="text-gray-700 text-lg font-medium">{item}</span>
+                          <span className="text-gray-700 ">
+                            {item}
+                          </span>
                         </li>
-                      ))
-                  }
+                      ))}
                 </ul>
               </div>
             )}
-            
+
             {/* What's Not Included (Exclusions) */}
             {exclusions && (
               <div className="bg-white rounded-xl shadow-lg p-6 mt-8">
@@ -466,17 +540,24 @@ const TourDetailPage = ({ params }) => {
                   Not Included
                 </h3>
                 <ul className="space-y-3">
-                  {exclusions.split('\n').filter(item => item.trim()).map((item, i) => {
-                    if (item.toLowerCase().includes('not included')) return null;
-                    return (
-                      <li key={i} className="flex items-start">
-                        <div className="bg-red-100 text-red-500 p-2 rounded-full mr-3 mt-0.5 flex-shrink-0">
-                          <FaInfoCircle className="w-5 h-5" />
-                        </div>
-                        <span className="text-gray-700 text-lg font-medium">{item.replace(/^-/, '').trim()}</span>
-                      </li>
-                    );
-                  }).filter(Boolean)}
+                  {exclusions
+                    .split("\n")
+                    .filter((item) => item.trim())
+                    .map((item, i) => {
+                      if (item.toLowerCase().includes("not included"))
+                        return null;
+                      return (
+                        <li key={i} className="flex items-start">
+                          <div className="bg-red-100 text-red-500 p-2 rounded-full mr-3 mt-0.5 flex-shrink-0">
+                            <FaInfoCircle className="w-4 h-4" />
+                          </div>
+                          <span className="text-gray-700">
+                            {item.replace(/^-/, "").trim()}
+                          </span>
+                        </li>
+                      );
+                    })
+                    .filter(Boolean)}
                 </ul>
               </div>
             )}

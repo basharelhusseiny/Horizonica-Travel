@@ -26,7 +26,8 @@ const safariExcursions = [
     details: {
       overviewTitle:
         "Unforgettable Quad Bike from Hurghada – 3-Hour Desert Adventure ",
-        overviewDetails:"Looking for the ultimate Hurghada ATV experience?\nJoin our thrilling quad bike safari from Hurghada, designed for those who crave adrenaline, breathtaking desert views, and cultural encounters – all in just 3 hours!",
+      overviewDetails:
+        "Looking for the ultimate Hurghada ATV experience?\nJoin our thrilling quad bike safari from Hurghada, designed for those who crave adrenaline, breathtaking desert views, and cultural encounters – all in just 3 hours!",
       tourHighlights: {
         pickup: "Pick-up from Hurghada hotels",
         chooseTrip:
@@ -64,13 +65,13 @@ const safariExcursions = [
       pricing:
         "Hurghada Quad Safari Prices:\n\nSingle Quad Bike : €18\n\nDouble Quad Bike  (shared quad): €30 (max 120 kg combined)\n\nPrivate Quad Bike Tour from Hurghada\nFor a more personal experience, you can upgrade to a private ATV Hurghada safari with your own instructor – just +€20 per person.\nIncludes the full program\nShared hotel transfer\n\nNot suitable for children under 5 years\n\nPerfect for couples or anyone seeking an exclusive quad bike tour from Hurghada!",
       inclusions:
-        "Included in the Price of safari Hurghada quad bike\nHotel pickup and drop-off (Hurghada city\n\nonly)\n\nQuad bike ride (approx. 50 km total)\n\nCamel ride\n\nProfessional desert safari guide\n\nVisit to Bedouin village + Bedouin tea\n\nAll taxes and service charges",
+        "Included in the Price of safari Hurghada quad bike\nHotel pickup and drop-off (Hurghada city only)\n\nQuad bike ride (approx. 50 km total)\n\nCamel ride\n\nProfessional desert safari guide\n\nVisit to Bedouin village + Bedouin tea\n\nAll taxes and service charges",
       exclusions:
         "Not Included\n\n-Scarves and goggles (available for rent at the station)\n-There is €1per person is paid on safari site\n-Extra drinks\n-Photo & video service\n-Transfers from Makadi Bay,  Sahl Hasheesh (€5 per person)\n\n-Transfers from Safaga or elgouna and some bay (€10 per person)",
       whatToBring:
         "What to Bring:\n\n-Comfortable clothes & closed shoes\n\n-Sunglasses & sun hat\n\n-Bottle of water\n\n-Scarf or bandana",
       bookingInfo:
-        "Book now and let the desert adventure begin!\n\nFor more details & reservations, contact us today!",
+        "Book now and let the desert adventure begin!\n\nYou can book via WhatsApp by sending a message [ Tour name, the number of people and the day of the trip ]",
     },
   },
   {
@@ -98,7 +99,8 @@ const safariExcursions = [
     details: {
       overviewTitle:
         "Super Safari in Hurghada – Quad Bike, Camel Ride & BBQ Dinner",
-        overviewDetails:"Ready for the top-rated desert adventure in Hurghada ? Join our Super Safari in Hurghada Excursion enjoy a full-day journey through the Eastern Desert. Ride your own quad bike, hop on a camel, drive a 4x4 jeep, and enjoy a delicious Bedouin BBQ dinner with live entertainment — all in one unforgettable tour!\n\nWhy Choose VIP Super Safari in Hurghada?\n\nFree hotel pickup & drop-off in Hurghada\n\nSmaller group size for a comfortable, personal experience\n\nPrivate Safari Station away from crowded tourist routes\n\nHigh-quality service and professional\n\ndesert guides\n\nAll-in-one experience: Quad Bike + Jeep + Spider Buggy + Camel + BBQ Dinner + Oriental Show",
+      overviewDetails:
+        "Ready for the top-rated desert adventure in Hurghada ? Join our Super Safari in Hurghada Excursion enjoy a full-day journey through the Eastern Desert. Ride your own quad bike, hop on a camel, drive a 4x4 jeep, and enjoy a delicious Bedouin BBQ dinner with live entertainment — all in one unforgettable tour!\n\nWhy Choose VIP Super Safari in Hurghada?\n\nFree hotel pickup & drop-off in Hurghada\n\nSmaller group size for a comfortable, personal experience\n\nPrivate Safari Station away from crowded tourist routes\n\nHigh-quality service and professional\n\ndesert guides\n\nAll-in-one experience: Quad Bike + Jeep + Spider Buggy + Camel + BBQ Dinner + Oriental Show",
       tourHighlights: {
         availability: "Availability: Every day",
         duration: "Duration: Around 6 hours",
@@ -152,7 +154,7 @@ const safariExcursions = [
       whatToBring:
         "What to Bring:\n\n-Comfortable clothes & closed shoes\n\n-Sunglasses & sun hat\n\n-Bottle of water\n\n-Scarf or bandana",
       bookingInfo:
-        "Book now and let the desert adventure begin!\n\nFor more details & reservations, contact us today!\n\nEasy Booking – No Prepayment Required\n\nBook via WhatsApp in seconds and pay later!",
+        "Book now and let the desert adventure begin!\n\nYou can book via WhatsApp by sending a message [ Tour name, the number of people and the day of the trip ]",
     },
   },
 ];
