@@ -381,6 +381,161 @@ const safariExcursions = [
         "Book now and let the desert adventure begin!\n\nYou can book via WhatsApp by sending a message [ Tour name, the number of people and the day of the trip ]",
     },
   },
+  {
+    id: 6,
+    slug: "Jeep-Safari-in-Hurghada",
+    title: "Jeep Safari in Hurghada",
+    description:
+      "Join an exciting Jeep Safari in Hurghada and discover the magic of the Eastern Desert. Visit a Bedouin village, enjoy a camel ride, Bedouin tea, and a BBQ dinner with a traditional show.",
+    mainImage: "/images/hurghada-images/safari/jeep-safari/mainIamge.jpg",
+    gallery: [
+      "/images/hurghada-images/safari/jeep-safari/image1.jpg",
+      "/images/hurghada-images/safari/jeep-safari/image2.jpg",
+      "/images/hurghada-images/safari/jeep-safari/image3.jpg",
+      "/images/hurghada-images/safari/jeep-safari/image4.jpg",
+      "/images/hurghada-images/safari/jeep-safari/image5.jpg",
+      "/images/hurghada-images/safari/jeep-safari/image6.jpg",
+    ],
+    price: "20 USD",
+    priceOld: "25 USD",
+    duration: "5 Hours",
+    location: "Hurghada",
+    groupSize: "Group tour",
+    rating: 4.7,
+    details: {
+      overviewTitle: "Jeep Safari from Hurghada",
+      overviewDetails:
+        "Experience the thrill of a Jeep Safari in Hurghada – a desert adventure that takes you deep into Egypt’s Eastern Desert. Explore the magic of the desert on a 4×4 Hurghada Jeep Safari, visit an authentic Bedouin village, enjoy a camel ride, and sip traditional Bedouin tea. This unforgettable desert safari from Hurghada ends with a delicious BBQ dinner under the stars.\n\nThe Jeep Safari Hurghada is the perfect family-friendly experience during your holiday. Whether you're looking to discover the Bedouin culture, ride camels, or enjoy a peaceful sunset in the dunes.\n\nBook your Hurghada Jeep Safari tour today with horoizonca and discover the true beauty of the Egyptian desert!",
+      tourHighlights: {
+        availability: "Availability: Every day",
+        duration: "Duration: Approx. 5 hours",
+        pickup: "Pickup: 14:30 PM",
+        dropOff: "Drop-off: After BBQ dinner and sunset",
+        tourType: "Tour Type: Group personalized adventure",
+      },
+      itinerary: [
+        {
+          step: "Jeep Safari Hurghada – Hotel Pickup",
+          description:
+            "Begin your Jeep Safari in Hurghada with a comfortable hotel pickup at 14:30 PM. Enjoy a relaxing 20–30 minute transfer through the city and into the Eastern Desert, where your off-road adventure begins.",
+        },
+        {
+          step: "Desert Safari Hurghada by Jeep – 25 KM Off-Road Adventure",
+          description:
+            "Embark on a thrilling 25 KM Jeep ride across golden sand dunes. This unforgettable desert safari Hurghada by Jeep 4×4 will take you through dramatic desert landscapes toward a traditional Bedouin village.",
+        },
+        {
+          step: "Bedouin Village Tour Hurghada – Camel Ride & Cultural Insight",
+          description:
+            "Arrive at an authentic Bedouin village where you'll experience real desert life. Take a short but memorable camel ride across the sand dunes and learn about Bedouin culture and traditions in this immersive experience.",
+        },
+        {
+          step: "BBQ Dinner Under the Stars – Bedouin Style",
+          description:
+            "After your adventure, relax at the safari camp and enjoy a traditional Bedouin BBQ dinner. Savor grilled meats, rice, salads, and fresh bread — all served in a peaceful desert setting beneath the stars.",
+        },
+        {
+          step: "Traditional Bedouin Tea by the Fire",
+          description:
+            "As part of your Bedouin Village Tour in Hurghada, enjoy a warm cup of Bedouin tea brewed on charcoal, the perfect way to relax and take in the silence of the desert night.",
+        },
+        {
+          step: "Sunset Views & Magical Atmosphere",
+          description:
+            "Before returning, admire the stunning desert sunset, one of the most magical moments of your trip. Don’t forget your camera — this is a view worth capturing.",
+        },
+      ],
+      pricing:
+        "\n\nAdults (12+ years): Full price\n\nChildren (6–11 years): 50% off\n\nChildren (0–5 years): Free of charge",
+      inclusions:
+        "\nHotel pickup and dropoff from Hurghada.\nAll transfers by 4×4 Jeep Safari vehicle.\nProfessional safari guide throughout the trip.\n25 KM Jeep offroad adventure in the desert.\nVisit to an authentic Bedouin village, and traditional Bedouin tea experience\nShort camel ride in the dunes.\nTasty BBQ dinner under the stars with live oriental show.\nAll service charges and taxes included.",
+      exclusions:
+        "\n\nScarf and goggles (available for rent onsite)\nMilitary tax: €1 per person (paid on site)\nSoft drinks or bottled water\nOptional DVD or trip photos\nPersonal expenses\nTransfer surcharge for hotels outside Hurghada:\nMakadi Bay & Sahl Hasheesh: €5 per person\nSafaga, El Gouna, Soma Bay: €10 per person",
+      whatToBring:
+        "\n\n-Comfortable clothes & a light jacket (it gets cooler at night).\n-Sunglasses, scarf & hat for sun and dust protection.\n-Sunscreen & closed-toe shoes (like sneakers).\n-Camera or phone for photos.\n-Cash for tips or extras.\n-Small backpack for personal items.",
+      bookingInfo:
+        "Book now and let the desert adventure begin!\n\nYou can book via WhatsApp by sending a message [ Tour name, the number of people and the day of the trip ]",
+    },
+  },
+  {
+    id: 7,
+    slug: "VIP-Sunset-Desert-Safari",
+    title:
+      "VIP Sunset Desert Safari in Hurghada – Quad Biking, Jeep Tour, Dinner & Stargazing",
+    description:
+      "Join our VIP Night Safari Hurghada for a magical evening of quad biking, Jeep adventure, Bedouin dinner, and stargazing under the desert sky, A perfect mix of thrill and tranquility in the heart of Egypt’s Eastern Desert.",
+    mainImage: "/images/hurghada-images/safari/Sunset-safari/mainIamge.jpg",
+    gallery: [
+      "/images/hurghada-images/safari/Sunset-safari/image1.jpg",
+      "/images/hurghada-images/safari/Sunset-safari/image2.jpg",
+      "/images/hurghada-images/safari/Sunset-safari/image3.jpg",
+      "/images/hurghada-images/safari/Sunset-safari/image4.jpg",
+      "/images/hurghada-images/safari/Sunset-safari/image5.jpg",
+      "/images/hurghada-images/safari/Sunset-safari/image6.jpg",
+      "/images/hurghada-images/safari/Sunset-safari/image7.jpg",
+    ],
+    price: "30 USD",
+    priceOld: "35 USD",
+    duration: "5 Hours",
+    location: "Hurghada",
+    groupSize: "Group tour",
+    rating: 4.6,
+    details: {
+      overviewTitle:
+        "VIP Sunset Desert Safari in Hurghada – Quad Biking, Jeep Tour, Dinner & Stargazing",
+      overviewDetails:
+        "Night Safari Hurghada is the perfect evening adventure for thrill-seekers and stargazers. This VIP tour begins with hotel pickup and takes you into the heart of the Egyptian desert for an unforgettable experience.\n\nSunset Safari in Hurghada offers the ultimate evening desert experience with quad biking, a 4×4 Jeep ride, and stargazing.\n\nStart your Sunset Desert Safari Hurghada at 5 PM with a 30-minute quad ride through the golden dunes.\n\nJoin a thrilling Jeep Safari in Hurghada to visit a Bedouin village, ride camels, and sip traditional Bedouin tea.\n\nEnjoy a delicious BBQ dinner under the stars, followed by relaxing time in a desert cave with optional shisha.\n\nEnd your night with a magical Stargazing Tour from Hurghada, using a telescope to explore the night sky.\n\nBook your VIP Night Safari Hurghada today with Horoizonca Travel for a mix of adventure, tradition, and cosmic beauty — all in one evening.",
+      tourHighlights: {
+        availability: "Availability: Every Thursday",
+        duration: "Duration: Around 5 hours",
+        pickup: "Pickup: 5:00 PM from your hotel in Hurghada",
+        dropOff: "Drop-off: Around 10:00 PM",
+        tourType: "Tour Type: Small group",
+      },
+      itinerary: [
+        {
+          step: "Hotel Pickup & Desert Ride",
+          description:
+            "Start your Hurghada Sunset Safari with a comfortable pickup at 5:00 PM and head to the desert camp.\nRide your quad bike for 30 minutes through golden dunes.\nSwitch to a 4×4 Jeep and drive 26 km across the desert.",
+        },
+        {
+          step: "Desert Exploration & Bedouin Village Tour",
+          description:
+            "Arrive at an authentic Bedouin village.\nEnjoy a 15-minute camel ride.\nStop by the legendary Acacia Tree – perfect photo spot.\nSip Bedouin tea and enjoy a welcome drink.\nWatch a stunning sunset over the mountains.",
+        },
+        {
+          step: "Mountain Chill & Cave Relaxation",
+          description:
+            "Relax in a peaceful mountain cave setting.\nEnjoy optional shisha and free Bedouin tea.\nUnwind in the calm of the desert twilight.",
+        },
+        {
+          step: "BBQ Dinner Under the Stars",
+          description:
+            "Feast on a delicious Bedouin-style dinner under the starry sky:\n-Grilled chicken quarter\n-Kofta\n-Basmati rice\n-2 bottled waters & 2 canned soft drinks\n-Seasonal fruits",
+        },
+        {
+          step: "Stargazing Experience",
+          description:
+            "End your night with a guided stargazing session:\nUse a professional telescope.\nLearn about planets and constellations.\nA magical end to your Hurghada night safari.",
+        },
+        {
+          step: "Return Transfer to Hotel",
+          description:
+            "Drop-off back to your hotel in Hurghada around 10:00 PM.",
+        },
+      ],
+      pricing:
+        "\n\nAdults: €30 per person\n\nChildren (6–11 years): 50% discount\n\nChildren (under 6 years): Free of charge",
+      inclusions:
+        "\nHotel pickup and dropoff in Hurghada\nComfortable airconditioned transportation\n30minute Quad Bike ride through the desert\n4×4 Jeep tour to explore the Bedouin village\nVisit to the ancient Acacia Tree for photos & stories\nShort camel ride & authentic Bedouin tea\nRelaxing time in a mountain cave (includes free tea & optional shisha)\nWatch a stunning desert sunset\nCandlelit BBQ dinner with set menu\nStargazing session with telescope & astronomy guide\nProfessional desert and astronomy guides",
+      exclusions:
+        "\n\nScarves and goggles (available for rent onsite)\nThere is €1 per person is paid on site as a military tax\nOptional drinks, souvenirs, DVDs\nPersonal expenses\nRoundtrip transfers from:\nMakadi Bay, Sahl Hasheesh: €5 per person\nSafaga, El Gouna, Soma Bay: €10 per person",
+      whatToBring:
+        "\n\n-Comfortable clothes & a light jacket (it gets cooler at night).\n-Sunglasses, scarf & hat for sun and dust protection.\n-Sunscreen & closed-toe shoes (like sneakers).\n-Camera or phone for photos.\n-Cash for tips or extras.\n-Small backpack for personal items.",
+      bookingInfo:
+        "Book now and let the desert adventure begin!\n\nYou can book via WhatsApp by sending a message [ Tour name, the number of people and the day of the trip ]",
+    },
+  },
 ];
 
 export default safariExcursions;
